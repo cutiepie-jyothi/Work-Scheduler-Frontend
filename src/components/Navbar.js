@@ -17,7 +17,7 @@ function Navbar({ logged, setUser }) {
                 <Link to="/" style={{ textDecoration: "none", color: "lightcyan" }}>
                     <h4 id="reg">Login</h4>
                 </Link>
-                <Link to="/todo" style={{ textDecoration: "none", color: "lightcyan" }}>
+                <Link to="/" style={{ textDecoration: "none", color: "lightcyan" }}>
                     <h4 id="reg">Todo List</h4>
                 </Link>
                 <h4 id="contact">Contact Us</h4>
@@ -28,7 +28,7 @@ function Navbar({ logged, setUser }) {
         // If the user is logged in, it displays logout nav item
         navComp = (
             <div className="links">
-                <Link to="/" style={{ textDecoration: "none", color: "green" }}>
+                <Link to="/" style={{ textDecoration: "none", color: "lightcyan" }}>
                     <h4 id="reg" onClick={() => setUser()}>Logout</h4>
                 </Link>
             </div>
